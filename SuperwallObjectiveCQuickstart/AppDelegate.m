@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 
+@import Paywall;
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Paywall setDebugMode: true];
+    // Learn how to find your API Keys here https://docs.superwall.me/docs/api-keys
+    [Paywall configureWithApiKey:@"pk_a1b2c3" userId:nil];
     return YES;
 }
 
