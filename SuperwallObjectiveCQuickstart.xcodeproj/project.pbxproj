@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3673FBE26EED48D00ABB8DB /* Paywall in Frameworks */ = {isa = PBXBuildFile; productRef = D3673FBD26EED48D00ABB8DB /* Paywall */; };
 		D38B7E9A26EEC3DF004E902F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B7E9926EEC3DF004E902F /* AppDelegate.m */; };
 		D38B7E9D26EEC3E0004E902F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B7E9C26EEC3E0004E902F /* SceneDelegate.m */; };
 		D38B7EA026EEC3E0004E902F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B7E9F26EEC3E0004E902F /* ViewController.m */; };
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3673FBE26EED48D00ABB8DB /* Paywall in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +156,7 @@
 			);
 			name = SuperwallObjectiveCQuickstart;
 			packageProductDependencies = (
+				D3673FBD26EED48D00ABB8DB /* Paywall */,
 			);
 			productName = SuperwallObjectiveCQuickstart;
 			productReference = D38B7E9526EEC3DF004E902F /* SuperwallObjectiveCQuickstart.app */;
@@ -226,6 +229,7 @@
 			);
 			mainGroup = D38B7E8C26EEC3DF004E902F;
 			packageReferences = (
+				D3673FBC26EED48D00ABB8DB /* XCRemoteSwiftPackageReference "paywall-ios" */,
 			);
 			productRefGroup = D38B7E9626EEC3DF004E902F /* Products */;
 			projectDirPath = "";
@@ -592,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3673FBC26EED48D00ABB8DB /* XCRemoteSwiftPackageReference "paywall-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/superwall-me/paywall-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3673FBD26EED48D00ABB8DB /* Paywall */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3673FBC26EED48D00ABB8DB /* XCRemoteSwiftPackageReference "paywall-ios" */;
+			productName = Paywall;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D38B7E8D26EEC3DF004E902F /* Project object */;
 }
