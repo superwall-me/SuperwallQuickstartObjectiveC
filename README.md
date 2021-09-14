@@ -7,6 +7,7 @@ Sign up for a free Superwall account [here](https://superwall.me).
 
 - [#1 Installation](https://github.com/superwall-me/SuperwallQuickstartObjectiveC/pull/1)
 - [#2 Initializing Paywall iOS & calling present](https://github.com/superwall-me/SuperwallQuickstartObjectiveC/pull/2)
+- [#3 Identify the user & track events](https://github.com/superwall-me/SuperwallQuickstartObjectiveC/pull/3)
 
 ## Requirements
 
