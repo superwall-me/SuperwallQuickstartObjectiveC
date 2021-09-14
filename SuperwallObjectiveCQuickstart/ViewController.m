@@ -19,7 +19,17 @@
     [super viewDidLoad];
     // Note: Make sure this delegate is set before trying to load the view!
     [Paywall setDelegate:self];
+    
+    // Set the id of user from your backend
+    [Paywall identifyWithUserId:@"1234-3245"];
+    
+    // Add arbitrary user attributes to that user
+    [Paywall setUserAttributesDictionaryWithAttributes:[[NSDictionary alloc] init]];
+    
+    // Track an event
+    [Paywall trackWithName:@"didLoadVC" params:nil];
 }
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
